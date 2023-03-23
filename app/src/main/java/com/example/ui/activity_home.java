@@ -1,5 +1,7 @@
 package com.example.ui;
 
+import static com.example.ui.R.id.imageView21;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -25,7 +27,7 @@ public class activity_home extends AppCompatActivity {
 
 
 
-        CardView exit = findViewById(R.id.logout);
+        ImageView exit = findViewById(imageView21);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
