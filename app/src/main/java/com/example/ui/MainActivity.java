@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         editor.putString("username",username);
                         //to save our data with key and value
                         editor.apply();
-                        startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                        startActivity(new Intent(MainActivity.this,activity_home.class));
 
                     }else{
                         Toast.makeText(getApplicationContext(),"Invalid Username and Password", Toast.LENGTH_SHORT ).show();

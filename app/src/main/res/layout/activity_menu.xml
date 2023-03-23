@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -104,6 +104,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:id="@+id/patients"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
@@ -230,7 +231,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
 
@@ -247,6 +248,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:id="@+id/logout"
                     android:background="@drawable/top_banner_background">
 
                     <ImageView
@@ -321,6 +323,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+
                     android:background="@drawable/top_banner_background">
 
                     <ImageView
@@ -338,8 +341,9 @@
 
                 <TextView
                     android:id="@+id/textView18"
-                    android:layout_width="match_parent"
+                    android:layout_width="68dp"
                     android:layout_height="wrap_content"
+                    android:padding="-1dp"
                     android:text="Calender"
                     android:textAlignment="center"
                     android:textColor="#2e3d6d"
